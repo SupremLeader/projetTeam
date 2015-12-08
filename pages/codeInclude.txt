@@ -32,7 +32,7 @@ switch ($action) {
 
 
 
-// Se place à l'endroit souhaiter dans le HTML
+// Se place à l'endroit souhaiter dans le "HTML"
 <?php
         include($main);
         ?>

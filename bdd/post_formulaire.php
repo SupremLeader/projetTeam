@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('bdd/connexionBDD.php');
+require_once("connexionBDD.php");
 
 try{
     // envoi form bdd
@@ -32,12 +32,12 @@ try{
     echo $ex->getMessage(); 
 }
 
-foreach ($_POST as $key => $value) {
-
-    if (empty($value)){
-        echo " <span style='color:red'> le champ " . $key . " est vide </span> <br/>"; 
-    } 
-}
+//foreach ($_POST as $key => $value) {
+//
+//    if (empty($value)){
+//        echo " <span style='color:red'> le champ " . $key . " est vide </span> <br/>"; 
+//    } 
+//}
 
 
 ?>
@@ -75,7 +75,7 @@ foreach ($_POST as $key => $value) {
         <div class="form-group required">
             <label class="col-md-4 control-label" for="mdp">Mot de passe</label>  
             <div class="col-md-4"><p>
-                <input id="mdp" name="mdp" type="mdp" class="form-control input-md"> <?php
+                <input id="mdp" name="mdp" type="password" class="form-control input-md"> <?php
                 if(isset($_POST["valider"])){
                     if(empty($_POST["mdp"]))
                     {echo  "<span> le champ Mot de passe est obligatoire</span> </br>";}} ?>

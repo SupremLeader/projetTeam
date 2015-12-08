@@ -1,7 +1,7 @@
 <?php
 // connexion à la base de données
-$user = "ProjetTeam";
-$password = "password";
+$user = "Pascual";
+$password = "123";
 
 // avec gestion exception
 
