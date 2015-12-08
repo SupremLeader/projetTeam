@@ -1,5 +1,29 @@
 <<<<<<< HEAD
 <?php
+session_start();
+?>
+
+<!doctype html>
+<html lang=fr>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog</title>
+    </head>
+    <body>
+        <a href="index.php">Home</a> <a href="aide.php">Aide</a> <a href="services.php">Services</a>
+        <hr />
+        <?php
+        if(isset($_SESSION["user"])) { ?>            
+        Bonjour <?= $_SESSION["user"]["prenom_nom"] ?><a href="deconnexion.php">Déconnexion</a>
+        <?php }
+        else { ?>
+        <a href="connexion.php">Connexion</a> - <a href="inscription.php">Inscription</a>
+        <?php } ?>
+    </body>
+</html>
+=======
+<<<<<<< HEAD
+<?php
 
 ?>
 
@@ -196,3 +220,4 @@
 
 </html>
 >>>>>>> 6b0deada181fbb7b4948945895ed93fb54145675
+>>>>>>> f8a2ab95f988c9b855cdbdd48d34972ab54b5c86
