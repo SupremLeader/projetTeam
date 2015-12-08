@@ -1,0 +1,39 @@
+html{text-align: center;}
+
+body{}
+
+header{background: black;}
+
+.logo-header{}
+
+.logo-site{ width: 0.1px; min-width: 100px;}
+
+aside{background: white; border-radius: 10px; border: double black; margin: 15px 50px}
+
+main{background: ; margin: 15px 0px; border-radius: 10px; border: double black;}
+
+footer{background: darkorange;}
+
+h1,h2,h3,h4,h5,h6,p{color: white; text-align: center;}
+
+label{color: black}
+
+.cent-nav { text-align:center; }
+.cent-nav ul.nav { display:inline-block; }
+.cent-nav li { display:inline; }
+.cent-nav a { float:right; }
+* html .cent-nav ul.nav { display:inline; } /* IE6 */
+*+html .cent-nav ul.nav { display:inline; } /* IE7 */
+
+input{border-radius: 10px; margin: 0px 10px;}
+
+li>input{border-radius: 10px; margin: 8px;
+background: white; color: black}
+
+p>li>input{border-radius: 10px; margin: 8px;
+background: white; color: white}
+
+div>section{background: darkgrey; border-radius: 10px; margin: 10px 0px}
+
+section>p,h4{color: black; margin: 10px 10px;}
+
