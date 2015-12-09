@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -195,5 +190,4 @@
     </body>
 
 </html>
->>>>>>> 6b0deada181fbb7b4948945895ed93fb54145675
->>>>>>> f8a2ab95f988c9b855cdbdd48d34972ab54b5c86
+s
