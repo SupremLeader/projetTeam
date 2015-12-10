@@ -1,7 +1,12 @@
 <?php
 // connexion à la base de données
+<<<<<<< HEAD:bdd/connexionBDD.php
 $user = "Pascual";
 $password = "123";
+=======
+$user = "root";
+$password = "";
+>>>>>>> 44dfa5838f168953ebf1355c5a5cb63dffc9e9c7:bdd/connexionBDD.php
 
 // avec gestion exception
 
