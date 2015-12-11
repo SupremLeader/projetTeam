@@ -30,6 +30,7 @@ if (isset(parse_url($actual_link)["query"])) {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/annonces.css">
+        <link rel="stylesheet" href="css/rubban.css">
         <script src="js/annonce.js" type="text/javascript"></script>
         <script src="js/jquery-1.11.3.min.js"></script>
 
@@ -67,7 +68,7 @@ if (isset(parse_url($actual_link)["query"])) {
 
         <nav class="nav cent-nav"> <!-- MENU NAV RECHERCHE -->
 
-            <ul class="nav nav-pills">
+            <ul class="nav nav2 nav-pills">
 
                 <li><a href="/">Date</a></li>
                 <li><a href="/">Prix</a></li>
@@ -106,7 +107,7 @@ if (isset(parse_url($actual_link)["query"])) {
 
         <footer class="col-sm-12"> <!-- FOOTER MENU -->
             <section>
-                <h4>FOOTER</h4>
+                <h5>FOOTER</h5>
             </section>
         
         </footer> <!-- END FOOTER MENU -->
