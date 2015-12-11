@@ -1,41 +1,37 @@
 
-           <?php
+<?php
 
-           require_once('bdd/connexionBDD.php');
+//******** CONNEXION BDD ********
+
+require_once('bdd/connexionBDD.php');
 
 
+// ******************* INTEGRATION DES PAGES ***********************
 
-           if (isset($_GET["action"])) {
-               $action = $_GET["action"];
-           } else {
-               $action = "main";
-           }
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$query  = parse_url($actual_link);
 
-           switch ($action) {
-               case 'aide':
-                   $main = "pages/aide.php";
-                   break;
-               case 'post_formulaire':
-                   $main = "bdd/post_formulaire.php";
-                   break;
-               case 'main':
-                   $main = "pages/main.php";
-                   break;
-               default:
-                   $main = "pages/aide.php";
-                   break;
-           }
+if (isset(parse_url($actual_link)["query"])) {
+    $query  = parse_url($actual_link)["query"];
+    parse_str($query, $params);
+} else {
+    $params["action"]="annonces";
+}
 
-           ?>
+?>
 
-           <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="Fr">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/annonces.css">
+        <script src="js/annonce.js" type="text/javascript"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
 
 
         <title>Projet</title>
@@ -55,15 +51,15 @@
 
                 <ul class="nav nav-pills">
 
-                    <li><a href="/ProjetTeam/index.php?action=index">Accueil</a></li>
-                    <li><a>Depot d'annonce</a></li>
+                    <li><a href="/ProjetTeam/index.php?action=annonces">Accueil</a></li>
+                    <li><a href="/ProjetTeam/index.php?action=depot">Depot d'annonce</a></li>
                     <li><a href="/ProjetTeam/index.php?action=post_formulaire">Inscription</a></li>
                     <li><a href="/ProjetTeam/index.php?action=aide">Aide</a></li>
-                    
+
                     <?php
-                        include("pages/login.php");
+                    include("pages/login.php");
                     ?>
-                    
+
                 </ul>
             </nav> <!-- END MENU NAV -->
 
@@ -91,23 +87,28 @@
         </nav> <!-- END MENU NAV RECHERCHE -->
 
         <aside class="col-sm-2"> <!-- TOP ANNONCE -->
-            <fieldset>
-                <legend>Top Annonce</legend>
-            </fieldset>
+
+            <?php
+            include("pages/topAnnonce.php");
+            ?>
+
+
 
         </aside> <!-- END TOP ANNONCE -->
 
-        <main class="col-sm-9">
+        <!--  MAIN --><main class="col-sm-9">
 
-            <?php
-            include($main);
-            ?>
+        <?php
+        include("pages/$params[action].php");
+        ?>
 
-        </main>
+        </main> <!-- MAIN -->
+
         <footer class="col-sm-12"> <!-- FOOTER MENU -->
             <section>
-                <h1>Quentin</h1>
+                <h4>FOOTER</h4>
             </section>
+        
         </footer> <!-- END FOOTER MENU -->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -115,7 +116,6 @@
 
         <script>
         </script>
-
     </body>
 
 </html>
