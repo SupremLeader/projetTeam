@@ -48,7 +48,7 @@ if (isset(parse_url($actual_link)["query"])) {
             </div>
             <a><p>Site de vente de Particulier à Particulier</p></a>
 
-            <nav class="nav cent-nav"> <!-- MENU NAV -->
+            <nav class="nav cent_nav"> <!-- MENU NAV -->
 
                 <ul class="nav nav-pills">
 
@@ -60,31 +60,18 @@ if (isset(parse_url($actual_link)["query"])) {
                     <?php
                     include("pages/login.php");
                     ?>
-
+       
                 </ul>
             </nav> <!-- END MENU NAV -->
 
         </header> <!-- END HEADER -->
 
-        <nav class="nav cent-nav"> <!-- MENU NAV RECHERCHE -->
+        <nav class="nav cent_nav"> <!-- MENU NAV RECHERCHE -->
 
-            <ul class="nav nav2 nav-pills">
-
-                <li><a href="/">Date</a></li>
-                <li><a href="/">Prix</a></li>
-                <li><a href="/">Departement</a></li>
-
-                <li><form method="post">
-                    <li> 
-                        <ul class="nav nav-pills">
-                            <p><li><label>Recherche</label></li>
-                                <li><input type="search" id="recherche" name="recherche"></li>
-                                <li><input type="submit" name="recherche" value="ok"></li></p>    
-                        </ul>
-                    </li>
-                    </form> 
-                </li>
-            </ul>
+            <?php
+            include("pages/recherche.php");
+            ?>
+            
         </nav> <!-- END MENU NAV RECHERCHE -->
 
         <aside class="col-sm-2"> <!-- TOP ANNONCE -->

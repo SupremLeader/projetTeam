@@ -19,11 +19,12 @@ header{background: black; border-bottom: double 4px white}
 
 /****** NAV ******/
 
+nav{min-width: 1200px}
 
-.cent-nav { text-align:center; }
-.cent-nav ul.nav { display:inline-block; }
-.cent-nav li { display:inline; }
-.cent-nav a { float:right; }
+.cent_nav { text-align:center; }
+.cent_nav ul.nav { display:inline-block; }
+.cent_nav li { display:inline; }
+.cent_nav a { float:right; }
 * html .cent-nav ul.nav { display:inline; } /* IE6 */
 *+html .cent-nav ul.nav { display:inline; } /* IE7 */
 
@@ -64,6 +65,9 @@ li>label{float: left;color: red; padding: 5px 8px}
 
 p>a{margin: 10px 40px; text-align: center; color: royalblue; font-size: 10px}
 
+span>h4{color: greenyellow;}
+
+
 
 /************************ INPUT *************************/
 
@@ -74,6 +78,10 @@ li>input{border-radius: 10px; margin: 8px;
 background: white; color: black}
 
 p>li>input{border-radius: 10px; margin: 8px; background: white; color: white}
+
+
+
+p>span{color: royalblue}
 
 div>section{ border-radius: 10px; margin: 10px 0px}
 
