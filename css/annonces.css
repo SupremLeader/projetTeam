@@ -7,11 +7,12 @@
 	background-position-y: 50%;
 	margin-bottom: 1%;
     margin-top: 1%;
+    border-radius: 10px;
 }
 
-.miniature h1 {
+.miniature h4 {
 	color: white;
-	font-size: 4em;
+	font-size: 1.4em;
 	letter-spacing: 0.3em;
 	word-spacing: 0.5em;
 	font-family: Verdana;
@@ -19,10 +20,10 @@
 
 .miniature p {
 	color: white;
-	font-size: 3.5em;
+	font-size: 1.5em;
 	font-family: Verdana;
 }
 
 .int {
-	background-color: rgba(0, 0, 0, 0.49);
+	background-color: rgba(0, 0, 0, 0.09);border-radius: 10px; border: double white 4px;
 }
