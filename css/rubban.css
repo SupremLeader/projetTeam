@@ -16,7 +16,7 @@
     margin-right: 1em;
     padding: .75em 1.25em .75em .75em;
     border-radius: 0 .5em .5em 0;
-    background-color: royalblue;
+    background-color: crimson;
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 100%);
     background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 100%);
     box-shadow: inset 0 .062em 0 rgba(255,255,255,.6), 0 .125em .25em rgba(0,0,0,.2);
@@ -59,7 +59,7 @@
 /***************************** TEXTE ************************************************/
 
 
-h4{color: white;text-align: left;background-color: rgba(65, 105, 225, 0.5); margin: 80px 0; border-top: white 4px double;border-bottom: white 4px double;text-shadow: 0 .09em 0 rgba(0,0,0,.9); position: relative; top: -75px; }
+h4{color: white;text-align: left;background-color: rgba(220, 20, 60, 0.5); margin: 80px 0; border-top: white 4px double;border-bottom: white 4px double;text-shadow: 0 .09em 0 rgba(0,0,0,.9); position: relative; top: -75px; }
 
 h4:hover{background-color: darkorange;}
 
@@ -127,7 +127,7 @@ h4:hover{background-color: darkorange;}
 }
 
 
-h4.t{color: white;text-align: left;background-color: rgba(65, 105, 225, 0.5); margin: 80px 0; border-top: white 4px double;border-bottom: white 4px double;text-shadow: 0 .09em 0 rgba(0,0,0,.9); position: relative; top: -75px;}
+h4.t{color: white;text-align: left;background-color: rgba(220, 20, 60, 0.5); margin: 80px 0; border-top: white 4px double;border-bottom: white 4px double;text-shadow: 0 .09em 0 rgba(0,0,0,.9); position: relative; top: -75px;}
 
 /*h4.t:hover{background-color: darkorange;}*/
 
