@@ -6,12 +6,9 @@
 foreach ($db->query("SELECT * FROM annonces ORDER BY id DESC LIMIT 10") as $annonce) {
 
 echo <<<EOT
-    
-	<div class="miniature" style="background-image:url(uploads/$annonce[photo1])">
-  		<div class="int ">
-	  		<h4 class="t">$annonce[titre]</h4>
-	  		<p>$annonce[prix]€</p>
-		</div>
+    <button  class="btn btn-red ribbon-b int3">$annonce[titre]     $annonce[date_post]</button>
+	<div class="miniature int" style="background-image:url(uploads/$annonce[photo1])">
+
   	</div>
     
         <a href="index.php?action=annonce&id=$annonce[id]" class="ribbon-container-t"> 
