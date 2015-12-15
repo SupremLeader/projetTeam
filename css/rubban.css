@@ -170,12 +170,12 @@ button.ribbon-b:before, button.ribbon:after {
     z-index: -10;
 }
 button.ribbon-b:before {
-    border-color: #4169E1 #4169E1 #4169E1 transparent;
+    border-color: #DC143C #DC143C #DC143C transparent;
     left: -25px;
     border-width: 17px;
 }
 button.ribbon-b:after {
-    border-color: #4169E1 #4169E1 #4169E1 transparent ;
+    border-color: #DC143C #DC143C #DC143C transparent ;
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -197,14 +197,14 @@ button:before, button:after {
 }
 
 
-button.btn-primary{background: royalblue;}
+button.btn-primary{background: crimson;}
 
-button.btn-primary:before {
-    border-color: royalblue royalblue royalblue transparent;
+button.btn-red:before {
+    border-color: #DC143C #DC143C #DC143C transparent;
 }
 
-button.btn-primary:after {
-    border-color: royalblue royalblue royalblue transparent;
+button.btn-red:after {
+    border-color: #DC143C #DC143C #DC143C transparent;
 }
 
 button.btn-red{background: crimson;}
