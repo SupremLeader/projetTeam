@@ -32,7 +32,7 @@ if (isset($_POST["login"])) {
     if ($result) {
         if ( password_verify($_POST["mdp"], $result["mdp"])){
             
-            echo "<ul class='cent_nav nav'>" . "<span>" . "<h4>" .  "Bienvenue " . $result["prenom"] . " " . $result["nom"] . "." . "</h4>" . "</span>" . "</ul>";
+            echo "<ul class='cent_nav nav'>" . "<span>" . "<h5>" .  "Bienvenue " . $result["prenom"] . " " . $result["nom"] . "." . "</h5>" . "</span>" . "</ul>";
             
             // ouverture et maintien de la session 
             $_SESSION["user"]["id"] = $result["id"];
@@ -61,7 +61,8 @@ if (isset($_POST["login"])) {
                                 <li><p><span><input type="eamil" name="email"></span></p></li>
                                 <li><p><label>Mot de passe</label></p></li>
                                 <li><p><span><input type="password" id="mdp" name="mdp"></span></p></li>
-                                <li><p><input type="submit" name="login" value="login"></p></li>    
+                                <li><p><input type="submit" name="login" value="login"></p></li>                                <li><p><span>Mot de passe Oublié ?</span></p></li>
+                                <li><p><span>Inscription ?</span></p></li>    
                                 
                             </ul>
                         </li>

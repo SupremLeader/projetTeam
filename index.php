@@ -15,7 +15,7 @@ if (isset(parse_url($actual_link)["query"])) {
     $query  = parse_url($actual_link)["query"];
     parse_str($query, $params);
 } else {
-    $params["action"]="annonces";
+    $params["action"]="annonce";
 }
 
 ?>
@@ -31,8 +31,11 @@ if (isset(parse_url($actual_link)["query"])) {
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/annonces.css">
         <link rel="stylesheet" href="css/rubban.css">
+        <link rel="stylesheet" href="css/carteFrance.css">
         <script src="js/annonce.js" type="text/javascript"></script>
+        <script src="js/france-map.js"></script>
         <script src="js/jquery-1.11.3.min.js"></script>
+        
 
 
         <title>Projet</title>
@@ -64,15 +67,17 @@ if (isset(parse_url($actual_link)["query"])) {
                 </ul>
             </nav> <!-- END MENU NAV -->
 
-        </header> <!-- END HEADER -->
-
-        <nav class="nav cent_nav"> <!-- MENU NAV RECHERCHE -->
+       <nav class="nav cent_nav b-2"> <!-- MENU NAV RECHERCHE -->
 
             <?php
             include("pages/recherche.php");
             ?>
             
         </nav> <!-- END MENU NAV RECHERCHE -->
+       
+       
+        </header> <!-- END HEADER -->
+
 
         <aside class="col-sm-2"> <!-- TOP ANNONCE -->
 
